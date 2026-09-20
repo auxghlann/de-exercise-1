@@ -1,0 +1,81 @@
+application_id,applicant_name,email,company,industry,job_title,location,source,application_date,stage,salary_expected,recruiter,interview_date,notes
+1,Jamie Santos,jamie.santos@example.com,FoodHub PH,Food,Backend Developer,Manila,Kalibrr,13/07/2026,Applied,45000,Ana Santos,,
+2,Cameron Dela Cruz,cameron.delacruz@example.com,GreenCart PH,E-commerce,Software Engineer,Quezon City,Referral,13/01/2026,Applied,45000,Nina Tan,,Follow up next week
+3,Jordan Dela Cruz,jordan.delacruz@example.com,DataBridge Analytics,Technology,Data Analyst,Taguig,JobStreet,02/03/2026,Screening,50000,Ken Flores,18/03/2026,Need to prepare SQL
+4,Taylor Garcia,taylor.garcia@example.com,HealthFirst Labs,Healthcare,Python Developer,Pasig,LinkedIn,19/07/2026,Screening,35000,Julia Cruz,18/08/2026,Need to prepare SQL
+5,Casey Santos,casey.santos@example.com,BuildRight,Construction,Python Developer,Pasig,LinkedIn,10/07/2026,Screening,35000,Nina Tan,22/07/2026,Need to prepare SQL
+6,Jordan Reyes,jordan.reyes@example.com,BuildRight,Construction,Data Engineer,Pasig,JobStreet,16/01/2026,Final Interview,50000,Ana Santos,31/01/2026,Resume submitted
+7,Morgan Cruz,morgan.cruz@example.com,EduSphere,Education,Data Engineer,quezon city,Referral,09/04/2026,Screening,50000,Ken Flores,17/04/2026,
+8,Jordan Cruz,jordan.cruz@example.com,SecureNet,Technology,Software Engineer,Makati,Kalibrr,03/05/2026,Screening,80000,Julia Cruz,01/06/2026,Follow up next week
+9,Alex Flores,alex.flores@example.com,BRIGHTBANK,Finance,QA Engineer,Makati,JobStreet,17/04/2026,Applied,45000,Ken Flores,,Strong culture fit
+10,Riley Cruz,riley.cruz@example.com,LogiFast,Logistics,Business Analyst,Cebu City,Kalibrr,13/03/2026,Applied,80000,Nina Tan,,No response yet
+11,Sam Flores,sam.flores@example.com,BuildRight,Construction,full stack developer,Pasig,LinkedIn,02/03/2026,Withdrawn,40000,Ana Santos,,Waiting for recruiter
+12,Taylor Dela Cruz,taylor.delacruz@example.com,CloudNine Systems,Technology,Full Stack Developer,Taguig,Referral,06/06/2026,Applied,60000,,,Resume submitted
+13,Alex Reyes,alex.reyes@example.com,DataBridge Analytics ,Technology,QA Engineer,Taguig,LinkedIn,28/06/2026,Rejected,50000,Julia Cruz,,No response yet
+14,Riley Santos,riley.santos@example.com,CloudNine Systems,Technology,Backend Developer,taguig,Referral,08/07/2026,Rejected,50000,Ana Santos,,Resume submitted
+15,Avery Garcia,avery.garcia@example.com,FoodHub PH,Food,Data Analyst,Manila,REFERRAL,13/02/2026,Screening,40000,Julia Cruz,03/03/2026,Follow up next week
+16,Morgan Tan,morgan.tan@example.com,GreenCart PH,E-commerce,Data Engineer,Quezon City,Kalibrr,07/03/2026,Applied,,Paolo Garcia,,Waiting for recruiter
+17,Taylor Cruz,taylor.cruz@example.com,DataBridge Analytics,Technology,Backend Developer,Taguig ,Indeed,22/06/2026,Screening,80000,Nina Tan,22/07/2026,No response yet
+18,Avery Garcia,avery.garcia@example.com,BRIGHTBANK,Finance,Full Stack Developer,Makati,Referral,06/07/2026,Screening,55000,Paolo Garcia,12/07/2026,Salary discussion pending
+19,Jamie Flores,jamie.flores@example.com,BrightBank,Finance,Software Engineer,Makati,LinkedIn,10/01/2026,technical interview,45000,Ana Santos,04/02/2026,Follow up next week
+20,Jamie Santos,jamie.santos@example.com,BrightBank,Finance,Software Engineer,Makati,Indeed,13/08/2026,Screening,80000,Ken Flores,31/08/2026,Salary discussion pending
+21,Taylor Navarro,taylor.navarro@example.com,DataBridge Analytics,Technology,Software Engineer,taguig,LinkedIn,08/03/2026,Offer,60000,Ana Santos,01/04/2026,No response yet
+22,Sam Dela Cruz,sam.delacruz@example.com,PixelForge Studio,Media,data engineer,Manila,LinkedIn,04/05/2026,Rejected,30000,Paolo Garcia,,Need to prepare SQL
+23,Jordan Garcia,jordan.garcia@example.com,GreenCart PH,E-commerce,Python Developer,Quezon City,JobStreet,,Technical Interview,40000,Julia Cruz,11/03/2026,Salary discussion pending
+24,Riley Reyes,riley.reyes@example.com,GreenCart PH,E-commerce,Data Analyst,Quezon City,LinkedIn,17/01/2026,Final Interview,80000,,13/02/2026,Salary discussion pending
+25,Sam Navarro,sam.navarro@example.com,CloudNine Systems,Technology,Data Analyst,Taguig,JobStreet,08/05/2026,Applied,60000,Paolo Garcia,,Follow up next week
+26,Casey Navarro,casey.navarro@example.com,LogiFast ,Logistics,Full Stack Developer,Cebu City,JobStreet,19/03/2026,Screening,80000,Mark Reyes,31/03/2026,Salary discussion pending
+27,Cameron Santos,cameron.santos@example.com,NOVATECH SOLUTIONS,Technology,Full Stack Developer,Makati,Referral,15/07/2026,Screening,30000,Nina Tan,23/07/2026,Follow up next week
+28,Jamie Cruz,jamie.cruz@example.com,DataBridge Analytics,Technology,Python Developer,taguig,LinkedIn,22/01/2026,Technical Interview,45000,Nina Tan,,Follow up next week
+29,Jamie Dela Cruz,jamie.delacruz@example.com,BuildRight,Construction,QA Engineer,Pasig,Indeed,22/06/2026,Technical Interview,80000,Mark Reyes,16/07/2026,Need to prepare SQL
+30,Casey Dela Cruz,casey.delacruz@example.com,BrightBank,Finance,Full Stack Developer,Makati,INDEED,07/02/2026,Final Interview,50000,Ana Santos,10/02/2026,Strong culture fit
+31,Cameron Reyes,cameron.reyes@example.com,BuildRight,Construction,Business Analyst,Pasig,JobStreet,23/01/2026,Technical Interview,80000,Julia Cruz,28/01/2026,Salary discussion pending
+32,Casey Cruz,casey.cruz@example.com,PixelForge Studio,Media,Data Analyst,Manila,Kalibrr,27/04/2026,Rejected,,Nina Tan,,Resume submitted
+33,Jamie Cruz,jamie.cruz@example.com,FoodHub PH,Food,backend developer,Manila,Indeed,13/03/2026,Applied,35000,Julia Cruz,,Salary discussion pending
+34,Morgan Garcia,morgan.garcia@example.com,SecureNet,Technology,Full Stack Developer,Makati ,Indeed,29/06/2026,Technical Interview,50000,Ana Santos,04/07/2026,No response yet
+35,Alex Santos,alex.santos@example.com,HealthFirst Labs,Healthcare,Backend Developer,pasig,Kalibrr,31/03/2026,Offer,50000,Paolo Garcia,20/04/2026,No response yet
+36,Alex Reyes,alex.reyes@example.com,DATABRIDGE ANALYTICS,Technology,Data Analyst,Taguig,Indeed,24/01/2026,Withdrawn,40000,,,
+37,Sam Cruz,sam.cruz@example.com,CloudNine Systems,Technology,QA Engineer,Taguig,JobStreet,15/01/2026,Screening,30000,Ken Flores,25/01/2026,Waiting for recruiter
+38,Avery Dela Cruz,avery.delacruz@example.com,PixelForge Studio,Media,Backend Developer,Manila,JobStreet,12/06/2026,offer,45000,Paolo Garcia,15/06/2026,Good technical round
+39,Morgan Dela Cruz,morgan.delacruz@example.com,SecureNet ,Technology,Business Analyst,Makati,JobStreet,29/07/2026,Final Interview,45000,Ken Flores,04/08/2026,No response yet
+40,Riley Garcia,riley.garcia@example.com,NovaTech Solutions,Technology,QA Engineer,Makati,Indeed,25/02/2026,Offer,70000,Mark Reyes,07/03/2026,Follow up next week
+41,Jordan Dela Cruz,jordan.delacruz@example.com,FoodHub PH,Food,Business Analyst,Manila,Indeed,30/03/2026,Applied,35000,Ken Flores,,
+42,Avery Flores,avery.flores@example.com,LogiFast,Logistics,Backend Developer,cebu city,Referral,12/01/2026,Applied,50000,Julia Cruz,,Follow up next week
+43,Cameron Dela Cruz,cameron.delacruz@example.com,GreenCart PH,E-commerce,Python Developer,Quezon City,Referral,03/04/2026,Final Interview,55000,Nina Tan,09/04/2026,No response yet
+44,Jordan Tan,jordan.tan@example.com,BuildRight,Construction,software engineer,Pasig,Indeed,16/01/2026,Final Interview,30000,Paolo Garcia,21/01/2026,Need to prepare SQL
+45,Morgan Reyes,morgan.reyes@example.com,BUILDRIGHT,Construction,Business Analyst,Pasig,KALIBRR,08/07/2026,Rejected,80000,Paolo Garcia,,Need to prepare SQL
+46,Casey Cruz,casey.cruz@example.com,LogiFast,Logistics,Backend Developer,Cebu City,Referral,,Screening,60000,Nina Tan,07/03/2026,No response yet
+47,Alex Tan,alex.tan@example.com,DataBridge Analytics,Technology,Full Stack Developer,Taguig,Company Website,19/03/2026,Applied,55000,Paolo Garcia,,Salary discussion pending
+48,Riley Cruz,riley.cruz@example.com,DataBridge Analytics,Technology,QA Engineer,Taguig,LinkedIn,22/06/2026,Applied,,,,Salary discussion pending
+49,Casey Garcia,casey.garcia@example.com,FoodHub PH,Food,Data Analyst,manila,JobStreet,30/07/2026,Applied,30000,Paolo Garcia,,Waiting for recruiter
+50,Sam Garcia,sam.garcia@example.com,EduSphere,Education,Python Developer,Quezon City,JobStreet,07/07/2026,Final Interview,70000,Mark Reyes,30/07/2026,Follow up next week
+51,Sam Garcia,sam.garcia@example.com,GreenCart PH,E-commerce,Full Stack Developer,Quezon City ,LinkedIn,19/02/2026,Offer,80000,Nina Tan,01/03/2026,Waiting for recruiter
+52,Taylor Navarro,taylor.navarro@example.com,EduSphere ,Education,QA Engineer,Quezon City,Company Website,24/06/2026,Technical Interview,80000,Nina Tan,23/07/2026,
+53,Avery Navarro,avery.navarro@example.com,LogiFast,Logistics,Full Stack Developer,Cebu City,Indeed,22/08/2026,Applied,70000,Mark Reyes,,Resume submitted
+54,Riley Garcia,riley.garcia@example.com,DATABRIDGE ANALYTICS,Technology,Software Engineer,Taguig,Indeed,16/03/2026,Screening,50000,Julia Cruz,29/03/2026,
+55,Taylor Cruz,taylor.cruz@example.com,GreenCart PH,E-commerce,software engineer,Quezon City,LinkedIn,05/03/2026,Screening,40000,Paolo Garcia,21/03/2026,Need to prepare SQL
+56,Riley Dela Cruz,riley.delacruz@example.com,DataBridge Analytics,Technology,Python Developer,taguig,Referral,20/01/2026,Applied,60000,Ken Flores,,Follow up next week
+57,Sam Navarro,sam.navarro@example.com,BuildRight,Construction,Python Developer,Pasig,Company Website,06/01/2026,withdrawn,50000,Nina Tan,,
+58,Jordan Navarro,jordan.navarro@example.com,BuildRight,Construction,Data Analyst,Pasig,Company Website,02/03/2026,Applied,70000,Julia Cruz,,No response yet
+59,Taylor Navarro,taylor.navarro@example.com,SecureNet,Technology,Data Analyst,Makati,Company Website,06/02/2026,Withdrawn,80000,Nina Tan,,Follow up next week
+60,Sam Cruz,sam.cruz@example.com,GreenCart PH,E-commerce,Business Analyst,Quezon City,COMPANY WEBSITE,14/08/2026,Screening,30000,,27/08/2026,Salary discussion pending
+61,Morgan Flores,morgan.flores@example.com,EduSphere,Education,Python Developer,Quezon City,Indeed,18/07/2026,Rejected,50000,Ana Santos,,Strong culture fit
+62,Avery Santos,avery.santos@example.com,NovaTech Solutions,Technology,Data Analyst,Makati,LinkedIn,04/04/2026,Applied,35000,Mark Reyes,,Salary discussion pending
+63,Cameron Cruz,cameron.cruz@example.com,NOVATECH SOLUTIONS,Technology,Software Engineer,makati,Company Website,07/03/2026,Applied,35000,Ken Flores,,Resume submitted
+64,Taylor Reyes,taylor.reyes@example.com,PixelForge Studio,Media,Data Engineer,Manila,Referral,23/07/2026,Offer,,Ana Santos,04/08/2026,No response yet
+65,Jordan Reyes,jordan.reyes@example.com,LogiFast ,Logistics,Data Engineer,Cebu City,Kalibrr,05/06/2026,Final Interview,45000,Julia Cruz,05/07/2026,Waiting for recruiter
+66,Alex Flores,alex.flores@example.com,BuildRight,Construction,data engineer,Pasig,Referral,21/05/2026,Screening,55000,Ken Flores,03/06/2026,Follow up next week
+67,Riley Reyes,riley.reyes@example.com,LogiFast,Logistics,Backend Developer,Cebu City,Company Website,25/04/2026,Withdrawn,70000,Mark Reyes,,
+68,Casey Navarro,casey.navarro@example.com,FoodHub PH,Food,QA Engineer,Manila ,JobStreet,04/05/2026,Screening,50000,Ana Santos,15/05/2026,Strong culture fit
+69,Riley Dela Cruz,riley.delacruz@example.com,BrightBank,Finance,Backend Developer,Makati,Company Website,,Applied,55000,Mark Reyes,,Need to prepare SQL
+70,Morgan Tan,morgan.tan@example.com,HealthFirst Labs,Healthcare,Data Analyst,pasig,Referral,18/08/2026,Technical Interview,50000,Mark Reyes,,Salary discussion pending
+71,Sam Navarro,sam.navarro@example.com,SecureNet,Technology,Full Stack Developer,Makati,Company Website,27/05/2026,Offer,70000,Ana Santos,01/06/2026,Resume submitted
+72,Sam Garcia,sam.garcia@example.com,BRIGHTBANK,Finance,Full Stack Developer,Makati,Referral,24/03/2026,Final Interview,55000,,12/04/2026,Need to prepare SQL
+73,Avery Flores,avery.flores@example.com,LogiFast,Logistics,Business Analyst,Cebu City,Indeed,05/04/2026,Final Interview,50000,Mark Reyes,11/04/2026,Salary discussion pending
+74,Jamie Cruz,jamie.cruz@example.com,PixelForge Studio,Media,Business Analyst,Manila,Kalibrr,23/02/2026,Applied,70000,Nina Tan,,
+75,Casey Reyes,casey.reyes@example.com,BuildRight,Construction,QA Engineer,Pasig,JOBSTREET,06/08/2026,Applied,45000,Julia Cruz,,Follow up next week
+76,Avery Cruz,avery.cruz@example.com,SecureNet,Technology,Business Analyst,Makati,Kalibrr,16/03/2026,applied,30000,Mark Reyes,,Strong culture fit
+77,Alex Tan,alex.tan@example.com,GreenCart PH,E-commerce,backend developer,quezon city,LinkedIn,05/05/2026,Screening,55000,Julia Cruz,04/06/2026,Strong culture fit
+78,Alex Tan,alex.tan@example.com,GreenCart PH,E-commerce,backend developer,Quezon City,JobStreet,10/05/2026,Applied,30000,Nina Tan,,Resume submitted
+79,Jordan Reyes,jordan.reyes@example.com,GreenCart PH,E-commerce,Python Developer,Quezon City,Company Website,27/05/2026,Offer,45000,Paolo Garcia,08/06/2026,No response yet
+80,Cameron Santos,cameron.santos@example.com,HealthFirst Labs,Healthcare,Software Engineer,Pasig,Kalibrr,10/06/2026,Withdrawn,,Mark Reyes,,Resume submitted
