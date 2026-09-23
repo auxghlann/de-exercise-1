@@ -1,1 +1,2 @@
-setup.md
+*.md
+!README.md

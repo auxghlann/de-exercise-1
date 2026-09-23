@@ -1,0 +1,3091 @@
+cells:
+  - kind: 1
+    languageId: markdown
+    value: "# Experiment and Explore\r
+
+      \r
+
+      This notebook is for exploration and experimentation only— to be familliar
+      with the dataset."
+    metadata: {}
+  - kind: 1
+    languageId: markdown
+    value: "> Read [data/README.md](../../data/README.md) for more context about the
+      dataset."
+    metadata: {}
+  - kind: 2
+    languageId: sql
+    value: "SELECT *\r
+
+      FROM bronze_job_applications\r
+
+      LIMIT 10;"
+    outputs:
+      - grid:
+          state:
+            version: 34.3.1
+            cellSelection:
+              cellRanges:
+                - startRow:
+                    rowIndex: 0
+                  endRow:
+                    rowIndex: 0
+                  colIds:
+                    - "0"
+                  startColId: "0"
+            sideBar:
+              visible: true
+              position: right
+              openToolPanel: null
+              toolPanels:
+                columns:
+                  expandedGroupIds: []
+            columnSizing:
+              columnSizingModel:
+                - colId: "0"
+                  width: 182
+                - colId: "1"
+                  width: 202
+                - colId: "2"
+                  width: 250.66666666666666
+                - colId: "3"
+                  width: 231
+                - colId: "4"
+                  width: 156
+                - colId: "5"
+                  width: 202
+                - colId: "6"
+                  width: 147
+                - colId: "7"
+                  width: 200
+                - colId: "8"
+                  width: 200
+                - colId: "9"
+                  width: 200
+                - colId: "10"
+                  width: 200
+                - colId: "11"
+                  width: 200
+                - colId: "12"
+                  width: 200
+                - colId: "13"
+                  width: 200
+            columnOrder:
+              orderedColIds:
+                - "0"
+                - "1"
+                - "2"
+                - "3"
+                - "4"
+                - "5"
+                - "6"
+                - "7"
+                - "8"
+                - "9"
+                - "10"
+                - "11"
+                - "12"
+                - "13"
+            rowGroupExpansion:
+              expandedRowGroupIds: []
+              collapsedRowGroupIds: []
+            focusedCell:
+              colId: "0"
+              rowIndex: 0
+              rowPinned: null
+            rangeSelection:
+              cellRanges:
+                - startRow:
+                    rowIndex: 0
+                  endRow:
+                    rowIndex: 0
+                  colIds:
+                    - "0"
+                  startColId: "0"
+            scroll:
+              top: 36.920684814453125
+              left: 0
+          data:
+            duration: 4
+            recordsets:
+              - rows: []
+                rowsAffected: 10
+                columns:
+                  - name: application_id
+                    baseType: number
+                    definition:
+                      id: 16388
+                      name: application_id
+                      dataType: int8
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: 64
+                      scale: 0
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: number
+                      ddl: int8
+                      ddlWithNull: int8, null
+                  - name: applicant_name
+                    baseType: string
+                    definition:
+                      id: 16388
+                      name: applicant_name
+                      dataType: text
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: null
+                      scale: null
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: string
+                      ddl: text
+                      ddlWithNull: text, null
+                  - name: email
+                    baseType: string
+                    definition:
+                      id: 16388
+                      name: email
+                      dataType: text
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: null
+                      scale: null
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: string
+                      ddl: text
+                      ddlWithNull: text, null
+                  - name: company
+                    baseType: string
+                    definition:
+                      id: 16388
+                      name: company
+                      dataType: text
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: null
+                      scale: null
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: string
+                      ddl: text
+                      ddlWithNull: text, null
+                  - name: industry
+                    baseType: string
+                    definition:
+                      id: 16388
+                      name: industry
+                      dataType: text
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: null
+                      scale: null
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: string
+                      ddl: text
+                      ddlWithNull: text, null
+                  - name: job_title
+                    baseType: string
+                    definition:
+                      id: 16388
+                      name: job_title
+                      dataType: text
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: null
+                      scale: null
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: string
+                      ddl: text
+                      ddlWithNull: text, null
+                  - name: location
+                    baseType: string
+                    definition:
+                      id: 16388
+                      name: location
+                      dataType: text
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: null
+                      scale: null
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: string
+                      ddl: text
+                      ddlWithNull: text, null
+                  - name: source
+                    baseType: string
+                    definition:
+                      id: 16388
+                      name: source
+                      dataType: text
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: null
+                      scale: null
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: string
+                      ddl: text
+                      ddlWithNull: text, null
+                  - name: application_date
+                    baseType: string
+                    definition:
+                      id: 16388
+                      name: application_date
+                      dataType: text
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: null
+                      scale: null
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: string
+                      ddl: text
+                      ddlWithNull: text, null
+                  - name: stage
+                    baseType: string
+                    definition:
+                      id: 16388
+                      name: stage
+                      dataType: text
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: null
+                      scale: null
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: string
+                      ddl: text
+                      ddlWithNull: text, null
+                  - name: salary_expected
+                    baseType: number
+                    definition:
+                      id: 16388
+                      name: salary_expected
+                      dataType: float8
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: null
+                      scale: null
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: number
+                      ddl: float8
+                      ddlWithNull: float8, null
+                  - name: recruiter
+                    baseType: string
+                    definition:
+                      id: 16388
+                      name: recruiter
+                      dataType: text
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: null
+                      scale: null
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: string
+                      ddl: text
+                      ddlWithNull: text, null
+                  - name: interview_date
+                    baseType: string
+                    definition:
+                      id: 16388
+                      name: interview_date
+                      dataType: text
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: null
+                      scale: null
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: string
+                      ddl: text
+                      ddlWithNull: text, null
+                  - name: notes
+                    baseType: string
+                    definition:
+                      id: 16388
+                      name: notes
+                      dataType: text
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: null
+                      scale: null
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: string
+                      ddl: text
+                      ddlWithNull: text, null
+                appliedRowLimit: 100000
+                isResultSet: true
+                sql: "SELECT *\r
+
+                  FROM bronze_job_applications\r
+
+                  LIMIT 10;"
+                refreshable: true
+                table: bronze_job_applications
+                schema: public
+                editable:
+                  insert: true
+                  update: true
+                  delete: true
+                meta: {}
+          isTransposed: false
+        height: 320
+      - grid:
+          state:
+            version: 34.3.1
+            cellSelection:
+              cellRanges:
+                - startRow:
+                    rowIndex: 6
+                    rowPinned: null
+                  endRow:
+                    rowIndex: 6
+                    rowPinned: null
+                  colIds:
+                    - "6"
+                  startColId: "6"
+            sideBar:
+              visible: true
+              position: right
+              openToolPanel: null
+              toolPanels:
+                columns:
+                  expandedGroupIds: []
+            columnSizing:
+              columnSizingModel:
+                - colId: "0"
+                  width: 182
+                - colId: "1"
+                  width: 202
+                - colId: "2"
+                  width: 272.3333333333333
+                - colId: "3"
+                  width: 231
+                - colId: "4"
+                  width: 156
+                - colId: "5"
+                  width: 202
+                - colId: "6"
+                  width: 146
+                - colId: "7"
+                  width: 139
+                - colId: "8"
+                  width: 197
+                - colId: "9"
+                  width: 184
+                - colId: "10"
+                  width: 193
+                - colId: "11"
+                  width: 150
+                - colId: "12"
+                  width: 186
+                - colId: "13"
+                  width: 221
+            columnOrder:
+              orderedColIds:
+                - "0"
+                - "1"
+                - "2"
+                - "3"
+                - "4"
+                - "5"
+                - "6"
+                - "7"
+                - "8"
+                - "9"
+                - "10"
+                - "11"
+                - "12"
+                - "13"
+            rowGroupExpansion:
+              expandedRowGroupIds: []
+              collapsedRowGroupIds:
+                - "0"
+                - "1"
+                - "2"
+                - "3"
+                - "4"
+                - "5"
+                - "6"
+                - "7"
+                - "8"
+                - "9"
+            focusedCell:
+              colId: "6"
+              rowIndex: 6
+              rowPinned: null
+            rangeSelection:
+              cellRanges:
+                - startRow:
+                    rowIndex: 6
+                    rowPinned: null
+                  endRow:
+                    rowIndex: 6
+                    rowPinned: null
+                  colIds:
+                    - "6"
+                  startColId: "6"
+            scroll:
+              top: 22.780847549438477
+              left: 0
+          data:
+            duration: 6
+            recordsets:
+              - rows:
+                  - - "1"
+                    - Jamie Santos
+                    - jamie.santos@example.com
+                    - FoodHub PH
+                    - Food
+                    - Backend Developer
+                    - Manila
+                    - Kalibrr
+                    - 13/07/2026
+                    - Applied
+                    - 45000
+                    - Ana Santos
+                    - null
+                    - null
+                  - - "2"
+                    - Cameron Dela Cruz
+                    - cameron.delacruz@example.com
+                    - GreenCart PH
+                    - E-commerce
+                    - Software Engineer
+                    - Quezon City
+                    - Referral
+                    - 13/01/2026
+                    - Applied
+                    - 45000
+                    - Nina Tan
+                    - null
+                    - Follow up next week
+                  - - "3"
+                    - Jordan Dela Cruz
+                    - jordan.delacruz@example.com
+                    - DataBridge Analytics
+                    - Technology
+                    - Data Analyst
+                    - Taguig
+                    - JobStreet
+                    - 02/03/2026
+                    - Screening
+                    - 50000
+                    - Ken Flores
+                    - 18/03/2026
+                    - Need to prepare SQL
+                  - - "4"
+                    - Taylor Garcia
+                    - taylor.garcia@example.com
+                    - HealthFirst Labs
+                    - Healthcare
+                    - Python Developer
+                    - Pasig
+                    - LinkedIn
+                    - 19/07/2026
+                    - Screening
+                    - 35000
+                    - Julia Cruz
+                    - 18/08/2026
+                    - Need to prepare SQL
+                  - - "5"
+                    - Casey Santos
+                    - casey.santos@example.com
+                    - BuildRight
+                    - Construction
+                    - Python Developer
+                    - Pasig
+                    - LinkedIn
+                    - 10/07/2026
+                    - Screening
+                    - 35000
+                    - Nina Tan
+                    - 22/07/2026
+                    - Need to prepare SQL
+                  - - "6"
+                    - Jordan Reyes
+                    - jordan.reyes@example.com
+                    - BuildRight
+                    - Construction
+                    - Data Engineer
+                    - Pasig
+                    - JobStreet
+                    - 16/01/2026
+                    - Final Interview
+                    - 50000
+                    - Ana Santos
+                    - 31/01/2026
+                    - Resume submitted
+                  - - "7"
+                    - Morgan Cruz
+                    - morgan.cruz@example.com
+                    - EduSphere
+                    - Education
+                    - Data Engineer
+                    - quezon city
+                    - Referral
+                    - 09/04/2026
+                    - Screening
+                    - 50000
+                    - Ken Flores
+                    - 17/04/2026
+                    - null
+                  - - "8"
+                    - Jordan Cruz
+                    - jordan.cruz@example.com
+                    - SecureNet
+                    - Technology
+                    - Software Engineer
+                    - Makati
+                    - Kalibrr
+                    - 03/05/2026
+                    - Screening
+                    - 80000
+                    - Julia Cruz
+                    - 01/06/2026
+                    - Follow up next week
+                  - - "9"
+                    - Alex Flores
+                    - alex.flores@example.com
+                    - BRIGHTBANK
+                    - Finance
+                    - QA Engineer
+                    - Makati
+                    - JobStreet
+                    - 17/04/2026
+                    - Applied
+                    - 45000
+                    - Ken Flores
+                    - null
+                    - Strong culture fit
+                  - - "10"
+                    - Riley Cruz
+                    - riley.cruz@example.com
+                    - LogiFast
+                    - Logistics
+                    - Business Analyst
+                    - Cebu City
+                    - Kalibrr
+                    - 13/03/2026
+                    - Applied
+                    - 80000
+                    - Nina Tan
+                    - null
+                    - No response yet
+                rowsAffected: 10
+                columns:
+                  - name: application_id
+                    baseType: number
+                    definition:
+                      id: 16388
+                      name: application_id
+                      dataType: int8
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: 64
+                      scale: 0
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: number
+                      ddl: int8
+                      ddlWithNull: int8, null
+                  - name: applicant_name
+                    baseType: string
+                    definition:
+                      id: 16388
+                      name: applicant_name
+                      dataType: text
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: null
+                      scale: null
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: string
+                      ddl: text
+                      ddlWithNull: text, null
+                  - name: email
+                    baseType: string
+                    definition:
+                      id: 16388
+                      name: email
+                      dataType: text
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: null
+                      scale: null
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: string
+                      ddl: text
+                      ddlWithNull: text, null
+                  - name: company
+                    baseType: string
+                    definition:
+                      id: 16388
+                      name: company
+                      dataType: text
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: null
+                      scale: null
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: string
+                      ddl: text
+                      ddlWithNull: text, null
+                  - name: industry
+                    baseType: string
+                    definition:
+                      id: 16388
+                      name: industry
+                      dataType: text
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: null
+                      scale: null
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: string
+                      ddl: text
+                      ddlWithNull: text, null
+                  - name: job_title
+                    baseType: string
+                    definition:
+                      id: 16388
+                      name: job_title
+                      dataType: text
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: null
+                      scale: null
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: string
+                      ddl: text
+                      ddlWithNull: text, null
+                  - name: location
+                    baseType: string
+                    definition:
+                      id: 16388
+                      name: location
+                      dataType: text
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: null
+                      scale: null
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: string
+                      ddl: text
+                      ddlWithNull: text, null
+                  - name: source
+                    baseType: string
+                    definition:
+                      id: 16388
+                      name: source
+                      dataType: text
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: null
+                      scale: null
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: string
+                      ddl: text
+                      ddlWithNull: text, null
+                  - name: application_date
+                    baseType: string
+                    definition:
+                      id: 16388
+                      name: application_date
+                      dataType: text
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: null
+                      scale: null
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: string
+                      ddl: text
+                      ddlWithNull: text, null
+                  - name: stage
+                    baseType: string
+                    definition:
+                      id: 16388
+                      name: stage
+                      dataType: text
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: null
+                      scale: null
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: string
+                      ddl: text
+                      ddlWithNull: text, null
+                  - name: salary_expected
+                    baseType: number
+                    definition:
+                      id: 16388
+                      name: salary_expected
+                      dataType: float8
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: null
+                      scale: null
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: number
+                      ddl: float8
+                      ddlWithNull: float8, null
+                  - name: recruiter
+                    baseType: string
+                    definition:
+                      id: 16388
+                      name: recruiter
+                      dataType: text
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: null
+                      scale: null
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: string
+                      ddl: text
+                      ddlWithNull: text, null
+                  - name: interview_date
+                    baseType: string
+                    definition:
+                      id: 16388
+                      name: interview_date
+                      dataType: text
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: null
+                      scale: null
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: string
+                      ddl: text
+                      ddlWithNull: text, null
+                  - name: notes
+                    baseType: string
+                    definition:
+                      id: 16388
+                      name: notes
+                      dataType: text
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: null
+                      scale: null
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: string
+                      ddl: text
+                      ddlWithNull: text, null
+                appliedRowLimit: 100000
+                isResultSet: true
+                sql: "SELECT *\r
+
+                  FROM bronze_job_applications\r
+
+                  LIMIT 10;"
+                refreshable: true
+                table: bronze_job_applications
+                schema: public
+                editable:
+                  insert: true
+                  update: true
+                  delete: true
+                meta: {}
+          isTransposed: false
+        height: 320
+    metadata: {}
+  - kind: 1
+    languageId: markdown
+    value: "## Row Count"
+    metadata: {}
+  - kind: 2
+    languageId: sql
+    value: "SELECT COUNT(*) as row_count\r
+
+      FROM bronze_job_applications;"
+    outputs:
+      - grid:
+          state:
+            version: 34.3.1
+            sideBar:
+              visible: true
+              position: right
+              openToolPanel: null
+              toolPanels:
+                columns:
+                  expandedGroupIds: []
+            columnSizing:
+              columnSizingModel:
+                - colId: "0"
+                  width: 161
+            columnOrder:
+              orderedColIds:
+                - "0"
+            rowGroupExpansion:
+              expandedRowGroupIds: []
+              collapsedRowGroupIds:
+                - "0"
+            focusedCell:
+              colId: "0"
+              rowIndex: 0
+              rowPinned: null
+          data:
+            duration: 7
+            recordsets:
+              - rows:
+                  - - "80"
+                rowsAffected: 1
+                columns:
+                  - name: row_count
+                    baseType: number
+                appliedRowLimit: 100000
+                isResultSet: true
+                sql: "SELECT COUNT(*) as row_count\r
+
+                  FROM bronze_job_applications;"
+                refreshable: true
+                table: bronze_job_applications
+                schema: public
+                editable:
+                  insert: true
+                  update: true
+                  delete: true
+                meta: {}
+          isTransposed: false
+        height: 100
+      - grid:
+          state:
+            version: 34.3.1
+            sideBar:
+              visible: true
+              position: right
+              openToolPanel: null
+              toolPanels:
+                columns:
+                  expandedGroupIds: []
+            columnSizing:
+              columnSizingModel:
+                - colId: "0"
+                  width: 161
+            columnOrder:
+              orderedColIds:
+                - "0"
+            rowGroupExpansion:
+              expandedRowGroupIds: []
+              collapsedRowGroupIds:
+                - "0"
+            focusedCell:
+              colId: "0"
+              rowIndex: 0
+              rowPinned: null
+          data:
+            duration: 5
+            recordsets:
+              - rows:
+                  - - "80"
+                rowsAffected: 1
+                columns:
+                  - name: row_count
+                    baseType: number
+                appliedRowLimit: 100000
+                isResultSet: true
+                sql: "SELECT COUNT(*) as row_count\r
+
+                  FROM bronze_job_applications;"
+                refreshable: true
+                table: bronze_job_applications
+                schema: public
+                editable:
+                  insert: true
+                  update: true
+                  delete: true
+                meta: {}
+          isTransposed: false
+        height: 146
+    metadata: {}
+  - kind: 1
+    languageId: markdown
+    value: The row count is at 80 records
+    metadata: {}
+  - kind: 1
+    languageId: markdown
+    value: "## Missing Check"
+    metadata: {}
+  - kind: 2
+    languageId: sql
+    value: "SELECT\r
+
+      \    COUNT(*) - COUNT(applicant_name) as applicant_name_count,\r
+
+      \    COUNT(*) - COUNT(application_id) as application_id_count,\r
+
+      \    COUNT(*) - COUNT(application_date) as application_date_count,\r
+
+      \    COUNT(*) - COUNT(company) as company_count,\r
+
+      \    COUNT(*) - COUNT(email) as email_count,\r
+
+      \    COUNT(*) - COUNT(industry) as industry_count,\r
+
+      \    COUNT(*) - COUNT(interview_date) as interview_date_count,\r
+
+      \    COUNT(*) - COUNT(job_title) as job_title_count,\r
+
+      \    COUNT(*) - COUNT(location) as location_count,\r
+
+      \    COUNT(*) - COUNT(salary_expected) as salary_expected_count,\r
+
+      \    COUNT(*) - COUNT(source) as source_count,\r
+
+      \    COUNT(*) - COUNT(stage) as stage_count,\r
+
+      \    COUNT(*) - COUNT(recruiter) as recruiter_count\r
+
+      FROM bronze_job_applications; "
+    metadata: {}
+  - kind: 1
+    languageId: markdown
+    value: "The table yields a few missing on columns:\r
+
+      - `application_date_count` : 3\r
+
+      - `interview_date_count` : 37\r
+
+      - `salary_expected_count` : 5\r
+
+      - `recruiter_count` : 6\r
+
+      \r
+
+      > *Note to future self: The current query is **not scalable**. Try to find
+      or research about optimized null counts query*"
+    metadata: {}
+  - kind: 2
+    languageId: sql
+    value: "SELECT \r
+
+      \    s.attname AS column_name,\r
+
+      \    ROUND((s.null_frac * c.reltuples)::numeric) AS
+      estimated_null_count,\r
+
+      \    ROUND((s.null_frac * 100)::numeric, 2) AS null_percentage\r
+
+      FROM pg_stats s\r
+
+      JOIN pg_class c ON c.relname = s.tablename\r
+
+      JOIN pg_namespace n ON n.oid = c.relnamespace AND n.nspname =
+      s.schemaname\r
+
+      WHERE s.tablename = 'bronze_job_applications' \r
+
+      \  AND s.schemaname = 'public';"
+    outputs:
+      - grid:
+          state:
+            version: 34.3.1
+            cellSelection:
+              cellRanges:
+                - startRow:
+                    rowIndex: 0
+                  endRow:
+                    rowIndex: 0
+                  colIds:
+                    - "0"
+                  startColId: "0"
+            sideBar:
+              visible: true
+              position: right
+              openToolPanel: null
+              toolPanels:
+                columns:
+                  expandedGroupIds: []
+            columnSizing:
+              columnSizingModel:
+                - colId: "0"
+                  width: 193
+                - colId: "1"
+                  width: 225
+                - colId: "2"
+                  width: 194
+            columnOrder:
+              orderedColIds:
+                - "0"
+                - "1"
+                - "2"
+            rowGroupExpansion:
+              expandedRowGroupIds: []
+              collapsedRowGroupIds: []
+            focusedCell:
+              colId: "0"
+              rowIndex: 0
+              rowPinned: null
+            rangeSelection:
+              cellRanges:
+                - startRow:
+                    rowIndex: 0
+                  endRow:
+                    rowIndex: 0
+                  colIds:
+                    - "0"
+                  startColId: "0"
+          data:
+            duration: 15
+            recordsets:
+              - rows: []
+                rowsAffected: 14
+                columns:
+                  - name: column_name
+                    baseType: string
+                  - name: estimated_null_count
+                    baseType: number
+                  - name: null_percentage
+                    baseType: number
+                appliedRowLimit: 100000
+                isResultSet: true
+                sql: "SELECT \r
+
+                  \    s.attname AS column_name,\r
+
+                  \    ROUND((s.null_frac * c.reltuples)::numeric) AS
+                  estimated_null_count,\r
+
+                  \    ROUND((s.null_frac * 100)::numeric, 2) AS
+                  null_percentage\r
+
+                  FROM pg_stats s\r
+
+                  JOIN pg_class c ON c.relname = s.tablename\r
+
+                  JOIN pg_namespace n ON n.oid = c.relnamespace AND n.nspname =
+                  s.schemaname\r
+
+                  WHERE s.tablename = 'bronze_job_applications' \r
+
+                  \  AND s.schemaname = 'public';"
+                refreshable: true
+                meta: {}
+          isTransposed: false
+        height: 320
+      - grid:
+          state:
+            version: 34.3.1
+            cellSelection:
+              cellRanges:
+                - startRow:
+                    rowIndex: 0
+                  endRow:
+                    rowIndex: 0
+                  colIds:
+                    - "0"
+                  startColId: "0"
+            sideBar:
+              visible: true
+              position: right
+              openToolPanel: null
+              toolPanels:
+                columns:
+                  expandedGroupIds: []
+            columnSizing:
+              columnSizingModel:
+                - colId: "0"
+                  width: 193
+                - colId: "1"
+                  width: 225
+                - colId: "2"
+                  width: 194
+            columnOrder:
+              orderedColIds:
+                - "0"
+                - "1"
+                - "2"
+            rowGroupExpansion:
+              expandedRowGroupIds: []
+              collapsedRowGroupIds:
+                - "0"
+                - "1"
+                - "2"
+                - "3"
+                - "4"
+                - "5"
+                - "6"
+                - "7"
+                - "8"
+                - "9"
+                - "10"
+                - "11"
+                - "12"
+                - "13"
+            focusedCell:
+              colId: "0"
+              rowIndex: 0
+              rowPinned: null
+            rangeSelection:
+              cellRanges:
+                - startRow:
+                    rowIndex: 0
+                  endRow:
+                    rowIndex: 0
+                  colIds:
+                    - "0"
+                  startColId: "0"
+            scroll:
+              top: 130.4007110595703
+              left: 0
+          data:
+            duration: 7
+            recordsets:
+              - rows:
+                  - - application_id
+                    - "0"
+                    - "0.00"
+                  - - applicant_name
+                    - "0"
+                    - "0.00"
+                  - - email
+                    - "0"
+                    - "0.00"
+                  - - company
+                    - "0"
+                    - "0.00"
+                  - - industry
+                    - "0"
+                    - "0.00"
+                  - - job_title
+                    - "0"
+                    - "0.00"
+                  - - location
+                    - "0"
+                    - "0.00"
+                  - - source
+                    - "0"
+                    - "0.00"
+                  - - application_date
+                    - "3"
+                    - "3.75"
+                  - - stage
+                    - "0"
+                    - "0.00"
+                  - - salary_expected
+                    - "5"
+                    - "6.25"
+                  - - recruiter
+                    - "6"
+                    - "7.50"
+                  - - interview_date
+                    - "37"
+                    - "46.25"
+                  - - notes
+                    - "9"
+                    - "11.25"
+                rowsAffected: 14
+                columns:
+                  - name: column_name
+                    baseType: string
+                  - name: estimated_null_count
+                    baseType: number
+                  - name: null_percentage
+                    baseType: number
+                appliedRowLimit: 100000
+                isResultSet: true
+                sql: "SELECT \r
+
+                  \    s.attname AS column_name,\r
+
+                  \    ROUND((s.null_frac * c.reltuples)::numeric) AS
+                  estimated_null_count,\r
+
+                  \    ROUND((s.null_frac * 100)::numeric, 2) AS
+                  null_percentage\r
+
+                  FROM pg_stats s\r
+
+                  JOIN pg_class c ON c.relname = s.tablename\r
+
+                  JOIN pg_namespace n ON n.oid = c.relnamespace AND n.nspname =
+                  s.schemaname\r
+
+                  WHERE s.tablename = 'bronze_job_applications' \r
+
+                  \  AND s.schemaname = 'public';"
+                refreshable: true
+                meta: {}
+          isTransposed: false
+        height: 320
+    metadata: {}
+  - kind: 1
+    languageId: markdown
+    value: "> *Note to self: This query yields the same result as the count query.
+      Use this kind of query later on to optimize the null checks.*\r
+
+      \r
+
+      The query above looks at the metadata of the table and not bruteforcing
+      your way to count the missing values!"
+    metadata: {}
+  - kind: 1
+    languageId: markdown
+    value: "We could just remove this one, but we try to save the columns as much as
+      possible (assuming this will be a thousand records, such data would be a
+      waste)\r
+
+      \r
+
+      Let's try to understand if the missing data is truly missing.\r
+
+      \r
+
+      \r
+
+      - `Application date` have unexpected missing data. One reason that comes
+      in mind is that, It may be because the fictional user forgot to add it. a
+      `null` value could mean the applicant does not remember the applied date
+      on that application\r
+
+      - `interview date` is acceptable because the application might be still on
+      applied state. a `null` value could mean the applicant is not expecting
+      interview on that application yet (applied stage)\r
+
+      - `salary` is also acceptable because job posting have undisclosed salary.
+      a `null` value could mean it is undisclosed\r
+
+      - `recruiter` is where the real argument starts. Just a reminder, this is
+      a job application tracker, and not a job posting site data, so the user
+      might not know the recruiter of a given company (since job posting may or
+      may not have a visible recruiter). Since this is a string, an `unknown`
+      fill is applied to this table also"
+    metadata: {}
+  - kind: 1
+    languageId: markdown
+    value: "## Fix table Datatypes"
+    metadata: {}
+  - kind: 2
+    languageId: sql
+    value: "SELECT column_name, data_type\r
+
+      FROM information_schema.columns\r
+
+      WHERE table_name = 'bronze_job_applications'\r
+
+      ORDER BY column_name;"
+    outputs:
+      - grid:
+          state:
+            version: 34.3.1
+            cellSelection:
+              cellRanges:
+                - startRow:
+                    rowIndex: 0
+                    rowPinned: null
+                  endRow:
+                    rowIndex: 13
+                    rowPinned: null
+                  colIds:
+                    - "0"
+                  startColId: "0"
+            sideBar:
+              visible: true
+              position: right
+              openToolPanel: null
+              toolPanels:
+                columns:
+                  expandedGroupIds: []
+            columnSizing:
+              columnSizingModel:
+                - colId: "0"
+                  width: 193
+                - colId: "1"
+                  width: 193
+            columnOrder:
+              orderedColIds:
+                - "0"
+                - "1"
+            rowGroupExpansion:
+              expandedRowGroupIds: []
+              collapsedRowGroupIds: []
+            focusedCell:
+              colId: "0"
+              rowIndex: 0
+              rowPinned: null
+            rangeSelection:
+              cellRanges:
+                - startRow:
+                    rowIndex: 0
+                    rowPinned: null
+                  endRow:
+                    rowIndex: 13
+                    rowPinned: null
+                  colIds:
+                    - "0"
+                  startColId: "0"
+          data:
+            duration: 12
+            recordsets:
+              - rows: []
+                rowsAffected: 14
+                columns:
+                  - name: column_name
+                    baseType: string
+                    definition:
+                      id: 13364
+                      name: column_name
+                      dataType: sql_identifier
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: null
+                      scale: null
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: string
+                      ddl: sql_identifier
+                      ddlWithNull: sql_identifier, null
+                  - name: data_type
+                    baseType: string
+                    definition:
+                      id: 13364
+                      name: data_type
+                      dataType: character_data
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: null
+                      scale: null
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: unknown
+                      ddl: character_data
+                      ddlWithNull: character_data, null
+                appliedRowLimit: 100000
+                isResultSet: true
+                sql: "SELECT column_name, data_type\r
+
+                  FROM information_schema.columns\r
+
+                  WHERE table_name = 'bronze_job_applications'\r
+
+                  ORDER BY column_name;"
+                refreshable: true
+                table: columns
+                schema: information_schema
+                editable:
+                  insert: true
+                  update: true
+                  delete: true
+                meta: {}
+          isTransposed: false
+        height: 320
+      - grid:
+          state:
+            version: 34.3.1
+            cellSelection:
+              cellRanges:
+                - startRow:
+                    rowIndex: 3
+                    rowPinned: null
+                  endRow:
+                    rowIndex: 13
+                    rowPinned: null
+                  colIds:
+                    - "0"
+                  startColId: "0"
+            sideBar:
+              visible: true
+              position: right
+              openToolPanel: null
+              toolPanels:
+                columns:
+                  expandedGroupIds: []
+            columnSizing:
+              columnSizingModel:
+                - colId: "0"
+                  width: 193
+                - colId: "1"
+                  width: 193
+            columnOrder:
+              orderedColIds:
+                - "0"
+                - "1"
+            rowGroupExpansion:
+              expandedRowGroupIds: []
+              collapsedRowGroupIds:
+                - "0"
+                - "1"
+                - "2"
+                - "3"
+                - "4"
+                - "5"
+                - "6"
+                - "7"
+                - "8"
+                - "9"
+                - "10"
+                - "11"
+                - "12"
+                - "13"
+            focusedCell:
+              colId: "0"
+              rowIndex: 3
+              rowPinned: null
+            rangeSelection:
+              cellRanges:
+                - startRow:
+                    rowIndex: 3
+                    rowPinned: null
+                  endRow:
+                    rowIndex: 13
+                    rowPinned: null
+                  colIds:
+                    - "0"
+                  startColId: "0"
+          data:
+            duration: 12
+            recordsets:
+              - rows:
+                  - - applicant_name
+                    - text
+                  - - application_date
+                    - text
+                  - - application_id
+                    - bigint
+                  - - company
+                    - text
+                  - - email
+                    - text
+                  - - industry
+                    - text
+                  - - interview_date
+                    - text
+                  - - job_title
+                    - text
+                  - - location
+                    - text
+                  - - notes
+                    - text
+                  - - recruiter
+                    - text
+                  - - salary_expected
+                    - double precision
+                  - - source
+                    - text
+                  - - stage
+                    - text
+                rowsAffected: 14
+                columns:
+                  - name: column_name
+                    baseType: string
+                    definition:
+                      id: 13364
+                      name: column_name
+                      dataType: sql_identifier
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: null
+                      scale: null
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: string
+                      ddl: sql_identifier
+                      ddlWithNull: sql_identifier, null
+                  - name: data_type
+                    baseType: string
+                    definition:
+                      id: 13364
+                      name: data_type
+                      dataType: character_data
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: null
+                      scale: null
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: unknown
+                      ddl: character_data
+                      ddlWithNull: character_data, null
+                appliedRowLimit: 100000
+                isResultSet: true
+                sql: "SELECT column_name, data_type\r
+
+                  FROM information_schema.columns\r
+
+                  WHERE table_name = 'bronze_job_applications'\r
+
+                  ORDER BY column_name;"
+                refreshable: true
+                table: columns
+                schema: information_schema
+                editable:
+                  insert: true
+                  update: true
+                  delete: true
+                meta: {}
+          isTransposed: false
+        height: 320
+    metadata: {}
+  - kind: 1
+    languageId: markdown
+    value: "As you can see almost all of the data types of the columns are `text`,
+      even the dates! \r
+
+      \r
+
+      This is expected since the dataset comes from a text-based format (csv),
+      there is no native metadata for pandas to infer to. In this silver layer,
+      is where we cast later on these datatypes to its proper datatype.\r
+
+      \r
+
+      From what I can see the proper datatypes of these fields would be:\r
+
+      - Date columns: `Date`\r
+
+      - application_ID and salary: `INTEGER`\r
+
+      - the rest : `TEXT`\r
+
+      \r\n"
+    metadata: {}
+  - kind: 1
+    languageId: markdown
+    value: "## Categorical Values"
+    metadata: {}
+  - kind: 1
+    languageId: markdown
+    value: "### Casing Problem"
+    metadata: {}
+  - kind: 1
+    languageId: markdown
+    value: "From what I noticed, the records have a casing problem. Example, in
+      location, `Quezon City` and `quezon City` are present in the table. \r
+
+      \r
+
+      Let's look to each possible fields one by one:"
+    metadata: {}
+  - kind: 2
+    languageId: sql
+    value: "SELECT DISTINCT location\r
+
+      FROM bronze_job_applications;"
+    outputs:
+      - grid:
+          state:
+            version: 34.3.1
+            cellSelection:
+              cellRanges:
+                - startRow:
+                    rowIndex: 0
+                  endRow:
+                    rowIndex: 0
+                  colIds:
+                    - "0"
+                  startColId: "0"
+            sideBar:
+              visible: true
+              position: right
+              openToolPanel: null
+              toolPanels:
+                columns:
+                  expandedGroupIds: []
+            columnSizing:
+              columnSizingModel:
+                - colId: "0"
+                  width: 147
+            columnOrder:
+              orderedColIds:
+                - "0"
+            rowGroupExpansion:
+              expandedRowGroupIds: []
+              collapsedRowGroupIds:
+                - "0"
+                - "1"
+                - "2"
+                - "3"
+                - "4"
+                - "5"
+                - "6"
+                - "7"
+                - "8"
+                - "9"
+                - "10"
+                - "11"
+                - "12"
+                - "13"
+                - "14"
+                - "15"
+            focusedCell:
+              colId: "0"
+              rowIndex: 0
+              rowPinned: null
+            rangeSelection:
+              cellRanges:
+                - startRow:
+                    rowIndex: 0
+                  endRow:
+                    rowIndex: 0
+                  colIds:
+                    - "0"
+                  startColId: "0"
+          data:
+            duration: 3
+            recordsets:
+              - rows:
+                  - - taguig
+                  - - makati
+                  - - manila
+                  - - Manila
+                  - - Quezon City
+                  - - Pasig
+                  - - "Manila "
+                  - - Taguig
+                  - - cebu city
+                  - - "Taguig "
+                  - - Cebu City
+                  - - quezon city
+                  - - Makati
+                  - - pasig
+                  - - "Makati "
+                  - - "Quezon City "
+                rowsAffected: 16
+                columns:
+                  - name: location
+                    baseType: string
+                    definition:
+                      id: 16388
+                      name: location
+                      dataType: text
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: null
+                      scale: null
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: string
+                      ddl: text
+                      ddlWithNull: text, null
+                appliedRowLimit: 100000
+                isResultSet: true
+                sql: "SELECT DISTINCT location \r
+
+                  FROM bronze_job_applications;"
+                refreshable: true
+                table: bronze_job_applications
+                schema: public
+                editable:
+                  insert: true
+                  update: true
+                  delete: true
+                meta: {}
+          isTransposed: false
+        height: 241
+      - grid:
+          state:
+            version: 34.3.1
+            cellSelection:
+              cellRanges:
+                - startRow:
+                    rowIndex: 0
+                  endRow:
+                    rowIndex: 0
+                  colIds:
+                    - "0"
+                  startColId: "0"
+            sideBar:
+              visible: true
+              position: right
+              openToolPanel: null
+              toolPanels:
+                columns:
+                  expandedGroupIds: []
+            columnSizing:
+              columnSizingModel:
+                - colId: "0"
+                  width: 147
+                - colId: "1"
+                  width: 156
+                - colId: "2"
+                  width: 231
+                - colId: "3"
+                  width: 231
+                - colId: "4"
+                  width: 184
+            columnOrder:
+              orderedColIds:
+                - "0"
+                - "1"
+                - "2"
+                - "3"
+                - "4"
+            rowGroupExpansion:
+              expandedRowGroupIds: []
+              collapsedRowGroupIds:
+                - "0"
+                - "1"
+                - "2"
+                - "3"
+                - "4"
+                - "5"
+                - "6"
+                - "7"
+                - "8"
+                - "9"
+                - "10"
+                - "11"
+                - "12"
+                - "13"
+                - "14"
+                - "15"
+                - "16"
+                - "17"
+                - "18"
+                - "19"
+                - "20"
+                - "21"
+                - "22"
+                - "23"
+                - "24"
+                - "25"
+                - "26"
+                - "27"
+                - "28"
+                - "29"
+                - "30"
+                - "31"
+                - "32"
+                - "33"
+                - "34"
+                - "35"
+                - "36"
+                - "37"
+                - "38"
+                - "39"
+                - "40"
+                - "41"
+                - "42"
+                - "43"
+                - "44"
+                - "45"
+                - "46"
+                - "47"
+                - "48"
+                - "49"
+                - "50"
+                - "51"
+                - "52"
+                - "53"
+                - "54"
+                - "55"
+                - "56"
+                - "57"
+                - "58"
+                - "59"
+                - "60"
+                - "61"
+                - "62"
+                - "63"
+                - "64"
+                - "65"
+                - "66"
+                - "67"
+                - "68"
+                - "69"
+                - "70"
+                - "71"
+                - "72"
+                - "73"
+                - "74"
+                - "75"
+                - "76"
+                - "77"
+                - "78"
+            focusedCell:
+              colId: "0"
+              rowIndex: 0
+              rowPinned: null
+            rangeSelection:
+              cellRanges:
+                - startRow:
+                    rowIndex: 0
+                  endRow:
+                    rowIndex: 0
+                  colIds:
+                    - "0"
+                  startColId: "0"
+            scroll:
+              top: 392.7732238769531
+              left: 0
+          data:
+            duration: 4
+            recordsets:
+              - rows:
+                  - - Pasig
+                    - Construction
+                    - BuildRight
+                    - Python Developer
+                    - Company Website
+                  - - Makati
+                    - Finance
+                    - BrightBank
+                    - Software Engineer
+                    - LinkedIn
+                  - - Quezon City
+                    - E-commerce
+                    - GreenCart PH
+                    - software engineer
+                    - LinkedIn
+                  - - Makati
+                    - Finance
+                    - BrightBank
+                    - Backend Developer
+                    - Company Website
+                  - - Pasig
+                    - Construction
+                    - BuildRight
+                    - data engineer
+                    - Referral
+                  - - Manila
+                    - Media
+                    - PixelForge Studio
+                    - Data Engineer
+                    - Referral
+                  - - Manila
+                    - Food
+                    - FoodHub PH
+                    - Business Analyst
+                    - Indeed
+                  - - taguig
+                    - Technology
+                    - CloudNine Systems
+                    - Backend Developer
+                    - Referral
+                  - - Makati
+                    - Technology
+                    - SecureNet
+                    - Data Analyst
+                    - Company Website
+                  - - Manila
+                    - Media
+                    - PixelForge Studio
+                    - Data Analyst
+                    - Kalibrr
+                  - - quezon city
+                    - E-commerce
+                    - GreenCart PH
+                    - backend developer
+                    - LinkedIn
+                  - - quezon city
+                    - Education
+                    - EduSphere
+                    - Data Engineer
+                    - Referral
+                  - - Quezon City
+                    - E-commerce
+                    - GreenCart PH
+                    - backend developer
+                    - JobStreet
+                  - - makati
+                    - Technology
+                    - NOVATECH SOLUTIONS
+                    - Software Engineer
+                    - Company Website
+                  - - Quezon City
+                    - E-commerce
+                    - GreenCart PH
+                    - Business Analyst
+                    - COMPANY WEBSITE
+                  - - Quezon City
+                    - E-commerce
+                    - GreenCart PH
+                    - Software Engineer
+                    - Referral
+                  - - Makati
+                    - Technology
+                    - SecureNet
+                    - Full Stack Developer
+                    - Company Website
+                  - - "Makati "
+                    - Technology
+                    - SecureNet
+                    - Full Stack Developer
+                    - Indeed
+                  - - Taguig
+                    - Technology
+                    - DATABRIDGE ANALYTICS
+                    - Data Analyst
+                    - Indeed
+                  - - Pasig
+                    - Construction
+                    - BuildRight
+                    - Data Analyst
+                    - Company Website
+                  - - Taguig
+                    - Technology
+                    - CloudNine Systems
+                    - Data Analyst
+                    - JobStreet
+                  - - Pasig
+                    - Healthcare
+                    - HealthFirst Labs
+                    - Python Developer
+                    - LinkedIn
+                  - - Cebu City
+                    - Logistics
+                    - LogiFast
+                    - Full Stack Developer
+                    - Indeed
+                  - - cebu city
+                    - Logistics
+                    - LogiFast
+                    - Backend Developer
+                    - Referral
+                  - - Pasig
+                    - Construction
+                    - BuildRight
+                    - QA Engineer
+                    - JOBSTREET
+                  - - Makati
+                    - Technology
+                    - NovaTech Solutions
+                    - Data Analyst
+                    - LinkedIn
+                  - - Quezon City
+                    - E-commerce
+                    - GreenCart PH
+                    - Python Developer
+                    - Referral
+                  - - "Taguig "
+                    - Technology
+                    - DataBridge Analytics
+                    - Backend Developer
+                    - Indeed
+                  - - Pasig
+                    - Construction
+                    - BuildRight
+                    - Python Developer
+                    - LinkedIn
+                  - - Taguig
+                    - Technology
+                    - DataBridge Analytics
+                    - Data Analyst
+                    - JobStreet
+                  - - "Quezon City "
+                    - E-commerce
+                    - GreenCart PH
+                    - Full Stack Developer
+                    - LinkedIn
+                  - - Taguig
+                    - Technology
+                    - CloudNine Systems
+                    - QA Engineer
+                    - JobStreet
+                  - - Quezon City
+                    - E-commerce
+                    - GreenCart PH
+                    - Python Developer
+                    - Company Website
+                  - - Cebu City
+                    - Logistics
+                    - "LogiFast "
+                    - Data Engineer
+                    - Kalibrr
+                  - - Taguig
+                    - Technology
+                    - "DataBridge Analytics "
+                    - QA Engineer
+                    - LinkedIn
+                  - - Taguig
+                    - Technology
+                    - DataBridge Analytics
+                    - QA Engineer
+                    - LinkedIn
+                  - - Makati
+                    - Finance
+                    - BRIGHTBANK
+                    - QA Engineer
+                    - JobStreet
+                  - - "Manila "
+                    - Food
+                    - FoodHub PH
+                    - QA Engineer
+                    - JobStreet
+                  - - Quezon City
+                    - Education
+                    - EduSphere
+                    - Python Developer
+                    - Indeed
+                  - - Pasig
+                    - Construction
+                    - BUILDRIGHT
+                    - Business Analyst
+                    - KALIBRR
+                  - - pasig
+                    - Healthcare
+                    - HealthFirst Labs
+                    - Backend Developer
+                    - Kalibrr
+                  - - Makati
+                    - Finance
+                    - BrightBank
+                    - Software Engineer
+                    - Indeed
+                  - - Pasig
+                    - Construction
+                    - BuildRight
+                    - Data Engineer
+                    - JobStreet
+                  - - Cebu City
+                    - Logistics
+                    - LogiFast
+                    - Backend Developer
+                    - Referral
+                  - - Quezon City
+                    - E-commerce
+                    - GreenCart PH
+                    - Python Developer
+                    - JobStreet
+                  - - Makati
+                    - Finance
+                    - BrightBank
+                    - Full Stack Developer
+                    - INDEED
+                  - - taguig
+                    - Technology
+                    - DataBridge Analytics
+                    - Software Engineer
+                    - LinkedIn
+                  - - Pasig
+                    - Construction
+                    - BuildRight
+                    - full stack developer
+                    - LinkedIn
+                  - - taguig
+                    - Technology
+                    - DataBridge Analytics
+                    - Python Developer
+                    - LinkedIn
+                  - - Cebu City
+                    - Logistics
+                    - LogiFast
+                    - Backend Developer
+                    - Company Website
+                  - - Makati
+                    - Technology
+                    - NovaTech Solutions
+                    - QA Engineer
+                    - Indeed
+                  - - Quezon City
+                    - Education
+                    - "EduSphere "
+                    - QA Engineer
+                    - Company Website
+                  - - Makati
+                    - Finance
+                    - BRIGHTBANK
+                    - Full Stack Developer
+                    - Referral
+                  - - Cebu City
+                    - Logistics
+                    - LogiFast
+                    - Business Analyst
+                    - Kalibrr
+                  - - Pasig
+                    - Construction
+                    - BuildRight
+                    - Business Analyst
+                    - JobStreet
+                  - - Taguig
+                    - Technology
+                    - CloudNine Systems
+                    - Full Stack Developer
+                    - Referral
+                  - - Quezon City
+                    - E-commerce
+                    - GreenCart PH
+                    - Data Analyst
+                    - LinkedIn
+                  - - Cebu City
+                    - Logistics
+                    - LogiFast
+                    - Business Analyst
+                    - Indeed
+                  - - Pasig
+                    - Construction
+                    - BuildRight
+                    - QA Engineer
+                    - Indeed
+                  - - Makati
+                    - Technology
+                    - "SecureNet "
+                    - Business Analyst
+                    - JobStreet
+                  - - Manila
+                    - Food
+                    - FoodHub PH
+                    - backend developer
+                    - Indeed
+                  - - Pasig
+                    - Healthcare
+                    - HealthFirst Labs
+                    - Software Engineer
+                    - Kalibrr
+                  - - Makati
+                    - Technology
+                    - SecureNet
+                    - Business Analyst
+                    - Kalibrr
+                  - - Taguig
+                    - Technology
+                    - DATABRIDGE ANALYTICS
+                    - Software Engineer
+                    - Indeed
+                  - - Pasig
+                    - Construction
+                    - BuildRight
+                    - software engineer
+                    - Indeed
+                  - - Manila
+                    - Media
+                    - PixelForge Studio
+                    - data engineer
+                    - LinkedIn
+                  - - pasig
+                    - Healthcare
+                    - HealthFirst Labs
+                    - Data Analyst
+                    - Referral
+                  - - Quezon City
+                    - Education
+                    - EduSphere
+                    - Python Developer
+                    - JobStreet
+                  - - Makati
+                    - Technology
+                    - SecureNet
+                    - Software Engineer
+                    - Kalibrr
+                  - - Manila
+                    - Media
+                    - PixelForge Studio
+                    - Backend Developer
+                    - JobStreet
+                  - - Manila
+                    - Media
+                    - PixelForge Studio
+                    - Business Analyst
+                    - Kalibrr
+                  - - taguig
+                    - Technology
+                    - DataBridge Analytics
+                    - Python Developer
+                    - Referral
+                  - - Manila
+                    - Food
+                    - FoodHub PH
+                    - Backend Developer
+                    - Kalibrr
+                  - - manila
+                    - Food
+                    - FoodHub PH
+                    - Data Analyst
+                    - JobStreet
+                  - - Manila
+                    - Food
+                    - FoodHub PH
+                    - Data Analyst
+                    - REFERRAL
+                  - - Makati
+                    - Technology
+                    - NOVATECH SOLUTIONS
+                    - Full Stack Developer
+                    - Referral
+                  - - Cebu City
+                    - Logistics
+                    - "LogiFast "
+                    - Full Stack Developer
+                    - JobStreet
+                  - - Taguig
+                    - Technology
+                    - DataBridge Analytics
+                    - Full Stack Developer
+                    - Company Website
+                  - - Quezon City
+                    - E-commerce
+                    - GreenCart PH
+                    - Data Engineer
+                    - Kalibrr
+                rowsAffected: 79
+                columns:
+                  - name: location
+                    baseType: string
+                    definition:
+                      id: 16388
+                      name: location
+                      dataType: text
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: null
+                      scale: null
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: string
+                      ddl: text
+                      ddlWithNull: text, null
+                  - name: industry
+                    baseType: string
+                    definition:
+                      id: 16388
+                      name: industry
+                      dataType: text
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: null
+                      scale: null
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: string
+                      ddl: text
+                      ddlWithNull: text, null
+                  - name: company
+                    baseType: string
+                    definition:
+                      id: 16388
+                      name: company
+                      dataType: text
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: null
+                      scale: null
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: string
+                      ddl: text
+                      ddlWithNull: text, null
+                  - name: job_title
+                    baseType: string
+                    definition:
+                      id: 16388
+                      name: job_title
+                      dataType: text
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: null
+                      scale: null
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: string
+                      ddl: text
+                      ddlWithNull: text, null
+                  - name: source
+                    baseType: string
+                    definition:
+                      id: 16388
+                      name: source
+                      dataType: text
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: null
+                      scale: null
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: string
+                      ddl: text
+                      ddlWithNull: text, null
+                appliedRowLimit: 100000
+                isResultSet: true
+                sql: "SELECT DISTINCT location, industry, company, job_title, source \r
+
+                  FROM bronze_job_applications;"
+                refreshable: true
+                table: bronze_job_applications
+                schema: public
+                editable:
+                  insert: true
+                  update: true
+                  delete: true
+                meta: {}
+          isTransposed: false
+        height: 320
+      - grid:
+          state:
+            version: 34.3.1
+            cellSelection:
+              cellRanges:
+                - startRow:
+                    rowIndex: 0
+                  endRow:
+                    rowIndex: 0
+                  colIds:
+                    - "0"
+                  startColId: "0"
+            sideBar:
+              visible: true
+              position: right
+              openToolPanel: null
+              toolPanels:
+                columns:
+                  expandedGroupIds: []
+            columnSizing:
+              columnSizingModel:
+                - colId: "0"
+                  width: 147
+            columnOrder:
+              orderedColIds:
+                - "0"
+            rowGroupExpansion:
+              expandedRowGroupIds: []
+              collapsedRowGroupIds:
+                - "0"
+                - "1"
+                - "2"
+                - "3"
+                - "4"
+                - "5"
+                - "6"
+                - "7"
+                - "8"
+                - "9"
+                - "10"
+                - "11"
+                - "12"
+                - "13"
+                - "14"
+                - "15"
+            focusedCell:
+              colId: "0"
+              rowIndex: 0
+              rowPinned: null
+            rangeSelection:
+              cellRanges:
+                - startRow:
+                    rowIndex: 0
+                  endRow:
+                    rowIndex: 0
+                  colIds:
+                    - "0"
+                  startColId: "0"
+            scroll:
+              top: 184.60342407226562
+              left: 0
+          data:
+            duration: 3
+            recordsets:
+              - rows:
+                  - - taguig
+                  - - makati
+                  - - manila
+                  - - Manila
+                  - - Quezon City
+                  - - Pasig
+                  - - "Manila "
+                  - - Taguig
+                  - - cebu city
+                  - - "Taguig "
+                  - - Cebu City
+                  - - quezon city
+                  - - Makati
+                  - - pasig
+                  - - "Makati "
+                  - - "Quezon City "
+                rowsAffected: 16
+                columns:
+                  - name: location
+                    baseType: string
+                    definition:
+                      id: 16388
+                      name: location
+                      dataType: text
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: null
+                      scale: null
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: string
+                      ddl: text
+                      ddlWithNull: text, null
+                appliedRowLimit: 100000
+                isResultSet: true
+                sql: "SELECT DISTINCT location\r
+
+                  FROM bronze_job_applications;"
+                refreshable: true
+                table: bronze_job_applications
+                schema: public
+                editable:
+                  insert: true
+                  update: true
+                  delete: true
+                meta: {}
+          isTransposed: false
+        height: 320
+    metadata: {}
+  - kind: 2
+    languageId: sql
+    value: "SELECT DISTINCT company\r
+
+      FROM bronze_job_applications;"
+    outputs:
+      - grid:
+          state:
+            version: 34.3.1
+            cellSelection:
+              cellRanges:
+                - startRow:
+                    rowIndex: 0
+                  endRow:
+                    rowIndex: 0
+                  colIds:
+                    - "0"
+                  startColId: "0"
+            sideBar:
+              visible: true
+              position: right
+              openToolPanel: null
+              toolPanels:
+                columns:
+                  expandedGroupIds: []
+            columnSizing:
+              columnSizingModel:
+                - colId: "0"
+                  width: 231
+            columnOrder:
+              orderedColIds:
+                - "0"
+            rowGroupExpansion:
+              expandedRowGroupIds: []
+              collapsedRowGroupIds:
+                - "0"
+                - "1"
+                - "2"
+                - "3"
+                - "4"
+                - "5"
+                - "6"
+                - "7"
+                - "8"
+                - "9"
+                - "10"
+                - "11"
+                - "12"
+                - "13"
+                - "14"
+                - "15"
+                - "16"
+                - "17"
+                - "18"
+                - "19"
+            focusedCell:
+              colId: "0"
+              rowIndex: 0
+              rowPinned: null
+            rangeSelection:
+              cellRanges:
+                - startRow:
+                    rowIndex: 0
+                  endRow:
+                    rowIndex: 0
+                  colIds:
+                    - "0"
+                  startColId: "0"
+            scroll:
+              top: 292.2232971191406
+              left: 0
+          data:
+            duration: 2
+            recordsets:
+              - rows:
+                  - - BUILDRIGHT
+                  - - DataBridge Analytics
+                  - - GreenCart PH
+                  - - "SecureNet "
+                  - - BrightBank
+                  - - "EduSphere "
+                  - - HealthFirst Labs
+                  - - BuildRight
+                  - - NOVATECH SOLUTIONS
+                  - - BRIGHTBANK
+                  - - "LogiFast "
+                  - - DATABRIDGE ANALYTICS
+                  - - FoodHub PH
+                  - - PixelForge Studio
+                  - - "DataBridge Analytics "
+                  - - EduSphere
+                  - - LogiFast
+                  - - NovaTech Solutions
+                  - - CloudNine Systems
+                  - - SecureNet
+                rowsAffected: 20
+                columns:
+                  - name: company
+                    baseType: string
+                    definition:
+                      id: 16388
+                      name: company
+                      dataType: text
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: null
+                      scale: null
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: string
+                      ddl: text
+                      ddlWithNull: text, null
+                appliedRowLimit: 100000
+                isResultSet: true
+                sql: "SELECT DISTINCT company\r
+
+                  FROM bronze_job_applications;"
+                refreshable: true
+                table: bronze_job_applications
+                schema: public
+                editable:
+                  insert: true
+                  update: true
+                  delete: true
+                meta: {}
+          isTransposed: false
+        height: 320
+    metadata: {}
+  - kind: 2
+    languageId: sql
+    value: "SELECT DISTINCT job_title\r
+
+      FROM bronze_job_applications;"
+    outputs:
+      - grid:
+          state:
+            version: 34.3.1
+            cellSelection:
+              cellRanges:
+                - startRow:
+                    rowIndex: 0
+                  endRow:
+                    rowIndex: 0
+                  colIds:
+                    - "0"
+                  startColId: "0"
+            sideBar:
+              visible: true
+              position: right
+              openToolPanel: null
+              toolPanels:
+                columns:
+                  expandedGroupIds: []
+            columnSizing:
+              columnSizingModel:
+                - colId: "0"
+                  width: 231
+            columnOrder:
+              orderedColIds:
+                - "0"
+            rowGroupExpansion:
+              expandedRowGroupIds: []
+              collapsedRowGroupIds:
+                - "0"
+                - "1"
+                - "2"
+                - "3"
+                - "4"
+                - "5"
+                - "6"
+                - "7"
+                - "8"
+                - "9"
+                - "10"
+                - "11"
+            focusedCell:
+              colId: "0"
+              rowIndex: 0
+              rowPinned: null
+            rangeSelection:
+              cellRanges:
+                - startRow:
+                    rowIndex: 0
+                  endRow:
+                    rowIndex: 0
+                  colIds:
+                    - "0"
+                  startColId: "0"
+            scroll:
+              top: 76.19800567626953
+              left: 0
+          data:
+            duration: 2
+            recordsets:
+              - rows:
+                  - - data engineer
+                  - - software engineer
+                  - - QA Engineer
+                  - - full stack developer
+                  - - Business Analyst
+                  - - Python Developer
+                  - - Full Stack Developer
+                  - - Software Engineer
+                  - - Backend Developer
+                  - - Data Engineer
+                  - - backend developer
+                  - - Data Analyst
+                rowsAffected: 12
+                columns:
+                  - name: job_title
+                    baseType: string
+                    definition:
+                      id: 16388
+                      name: job_title
+                      dataType: text
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: null
+                      scale: null
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: string
+                      ddl: text
+                      ddlWithNull: text, null
+                appliedRowLimit: 100000
+                isResultSet: true
+                sql: "SELECT DISTINCT job_title\r
+
+                  FROM bronze_job_applications;"
+                refreshable: true
+                table: bronze_job_applications
+                schema: public
+                editable:
+                  insert: true
+                  update: true
+                  delete: true
+                meta: {}
+          isTransposed: false
+        height: 320
+    metadata: {}
+  - kind: 2
+    languageId: sql
+    value: "SELECT DISTINCT source \r
+
+      FROM bronze_job_applications;"
+    outputs:
+      - grid:
+          state:
+            version: 34.3.1
+            cellSelection:
+              cellRanges:
+                - startRow:
+                    rowIndex: 0
+                  endRow:
+                    rowIndex: 0
+                  colIds:
+                    - "0"
+                  startColId: "0"
+            sideBar:
+              visible: true
+              position: right
+              openToolPanel: null
+              toolPanels:
+                columns:
+                  expandedGroupIds: []
+            columnSizing:
+              columnSizingModel:
+                - colId: "0"
+                  width: 184
+            columnOrder:
+              orderedColIds:
+                - "0"
+            rowGroupExpansion:
+              expandedRowGroupIds: []
+              collapsedRowGroupIds:
+                - "0"
+                - "1"
+                - "2"
+                - "3"
+                - "4"
+                - "5"
+                - "6"
+                - "7"
+                - "8"
+                - "9"
+                - "10"
+            focusedCell:
+              colId: "0"
+              rowIndex: 0
+              rowPinned: null
+            rangeSelection:
+              cellRanges:
+                - startRow:
+                    rowIndex: 0
+                  endRow:
+                    rowIndex: 0
+                  colIds:
+                    - "0"
+                  startColId: "0"
+            scroll:
+              top: 49.48942565917969
+              left: 0
+          data:
+            duration: 2
+            recordsets:
+              - rows:
+                  - - JobStreet
+                  - - Company Website
+                  - - Referral
+                  - - COMPANY WEBSITE
+                  - - INDEED
+                  - - KALIBRR
+                  - - Indeed
+                  - - Kalibrr
+                  - - LinkedIn
+                  - - JOBSTREET
+                  - - REFERRAL
+                rowsAffected: 11
+                columns:
+                  - name: source
+                    baseType: string
+                    definition:
+                      id: 16388
+                      name: source
+                      dataType: text
+                      primaryKey: false
+                      nullable: true
+                      identity: false
+                      computed: false
+                      computedExpression: null
+                      length: null
+                      scale: null
+                      default: null
+                      comment: null
+                      arrayDimension: null
+                      values: null
+                      baseType: string
+                      ddl: text
+                      ddlWithNull: text, null
+                appliedRowLimit: 100000
+                isResultSet: true
+                sql: "SELECT DISTINCT source \r
+
+                  FROM bronze_job_applications;"
+                refreshable: true
+                table: bronze_job_applications
+                schema: public
+                editable:
+                  insert: true
+                  update: true
+                  delete: true
+                meta: {}
+          isTransposed: false
+        height: 320
+    metadata: {}
+  - kind: 1
+    languageId: markdown
+    value: As expected, the records on the dataset have some casing problem. Some
+      data were CAPITALIZED, In Title Case, or, in small caps
+    metadata: {}
+  - kind: 1
+    languageId: markdown
+    value: ""
+    metadata: {}
+  - kind: 1
+    languageId: markdown
+    value: "## Normalize Table\r\n"
+    metadata: {}
+  - kind: 1
+    languageId: markdown
+    value: "the table is at around 60% correct, however there are violations in
+      there in 3NF. hence, the reason to normalize this table. \r
+
+      \r
+
+      #### Why?\r
+
+      \r
+
+      Because the table already satisfies 1nf and 2nf.\r
+
+      - Every cell is atomic (satisfies 1nf)\r
+
+      - The table does not have a composite key (satisfies 2nf)\r
+
+      \r
+
+      \r
+
+      In 3nf is where it gets interesting. Example, look at the `applicant_name`
+      column. As you can see below, there multiple occurences of one name. "
+    metadata: {}
+  - kind: 2
+    languageId: sql
+    value: "SELECT COUNT(applicant_name) AS name_count\r
+
+      FROM bronze_job_applicationss\r
+
+      WHERE applicant_name = 'Jamie Santos';"
+    metadata: {}
+  - kind: 1
+    languageId: markdown
+    value: "The name `Jamie Santos` have 2 records on the table. Editing this
+      specific name, would require you to edit multiple rows. And that would be
+      inneficient.\r
+
+      \r
+
+      This also applies to other non-key detail columns, such as, recruiter,
+      applicant details, company details, etc.\r
+
+      \r
+
+      This is a data anomaly. The current table suffers from update, insertion,
+      and deletion anomaly because if you alter one row, you should also alter
+      the row with the same identity on the one you are altering (e.g, altering
+      `Jamie Santos` to a new name, would require you to edit also the other
+      `Jamie Santos` on another row since they point to the same person. If not,
+      you're basically adding new data to the table, hence, the anomaly!).\r
+
+      \r
+
+      To fix that, we must put these different entities to their own table, to
+      be referenced later in the main application table.\r
+
+      \ "
+    metadata: {}
+  - kind: 1
+    languageId: markdown
+    value: "## Next Approach\r
+
+      \r
+
+      - fix table datatypes\r
+
+      - clean table (fill recruiter to `unknown`. Leave the other nulls as is)\r
+
+      - normalize table"
+    metadata: {}
+  - kind: 1
+    languageId: markdown
+    value: ""
+    metadata: {}
+metadata:
+  conn:
+    id: HzGy9HNac_88E1zrFhOLO
+    name: de-exercise-1
+  database: postgres
+  schema: public
+  saveOutput: true
